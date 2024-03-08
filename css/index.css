@@ -1,0 +1,64 @@
+@import url("./styled-components/navbar.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 1px solid inherit;
+    padding: 10px;
+}
+.row{
+    border: 1px solid inherit;
+    display: flex;
+    gap: calc(10vw + 10px);
+    justify-content: center;
+    align-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.row h1 {
+    color: darkblue;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.row h2 {
+    color: green;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.row p {
+    color: black;
+    background-color: yellow;
+    font-size: 48px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+.row button{
+    border: 1px solid white;
+    padding: .6rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    color: red;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.figure{
+    width: 100px;
+}
+img{
+    width: 100%;
+}
+
+@media screen and (max-width: 900px){
+    .row{
+        flex-direction: column;
+        
+    }
+}
